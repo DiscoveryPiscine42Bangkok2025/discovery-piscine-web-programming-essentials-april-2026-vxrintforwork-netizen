@@ -1,0 +1,65 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Tahoma', sans-serif;
+    color: #777;
+}
+
+
+.parallax {
+    
+    min-height: 100%;
+
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative;
+}
+
+
+.img1 {
+    background-image: url('https://cdn.britannica.com/34/235834-050-C5843610/two-different-breeds-of-cats-side-by-side-outdoors-in-the-garden.jpg');
+}
+
+
+.img2 {
+    background-image: url('https://media.wired.com/photos/593261cab8eb31692072f129/3:2/w_2560%2Cc_limit/85120553.jpg');
+}
+
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px 40px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+
+.black-block {
+    color: #ddd;
+    background-color: #000; 
+    text-align: center;
+    padding: 100px 80px;
+    line-height: 1.6;
+}
+
+.black-block h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #fff;
+}
