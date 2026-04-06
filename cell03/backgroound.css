@@ -1,0 +1,26 @@
+/* ตั้งค่าให้เนื้อหาอยู่กึ่งกลางหน้าจอ */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* เพิ่ม Effect ตอนเปลี่ยนสีให้ดูนุ่มนวล */
+    font-family: Arial, sans-serif;
+}
+
+/* ตกแต่งปุ่ม */
+#colorBtn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#colorBtn:active {
+    transform: scale(0.95); /* ทำให้ปุ่มยุบลงเล็กน้อยตอนคลิก */
+}
