@@ -9,11 +9,11 @@ table {
     width: 100vw;
     height: 100vh;
     border-collapse: collapse;
-    table-layout: fixed; /* This makes the table shrink */
+    table-layout: fixed;
 }
 
 td {
     border: 2px solid black;
     text-align: center;
-    font-size: 5vw; /* Text scales with window size */
+    font-size: 5vw;
 }
