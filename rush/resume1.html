@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Varintorn Painpaisansakul — CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@800&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #f7f5f0;
+      --accent: #c8f04a;
+      --dark: #111;
+      --text: #222;
+      --muted: #777;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Space Mono', monospace;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 64px;
+      background: var(--dark);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      z-index: 100;
+    }
+    nav .brand {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.1rem;
+      color: #fff;
+      text-decoration: none;
+    }
+    nav .brand span { color: var(--accent); }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav ul a {
+      color: #aaa;
+      text-decoration: none;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    main { padding-top: 64px; }
+    section { padding: 80px 2rem; max-width: 900px; margin: 0 auto; }
+    #hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+    }
+    .hero-photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--dark);
+      flex-shrink: 0;
+    }
+    .hero-text h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.05;
+      margin-bottom: 0.5rem;
+    }
+    .job-title {
+      display: inline-block;
+      background: var(--dark);
+      color: var(--accent);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .exp-item {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #e5e2db;
+    }
+    .skill-tag {
+      display: inline-block;
+      background: var(--dark);
+      color: var(--accent);
+      font-size: 0.7rem;
+      padding: 0.35rem 0.8rem;
+      margin: 0.3rem;
+      text-transform: uppercase;
+    }
+    #contact { background: var(--dark); color: #eee; padding: 80px 2rem; }
+    .contact-link {
+      display: block;
+      color: #aaa;
+      text-decoration: none;
+      padding: 1rem 0;
+      border-bottom: 1px solid #222;
+      word-break: break-all;
+    }
+    footer { text-align: center; padding: 2rem; font-size: 0.65rem; color: #444; }
+    @media (max-width: 680px) {
+      #hero { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#" class="brand">VARIN<span>.</span></a>
+    <ul>
+      <li><a href="#hero">About</a></li>
+      <li><a href="#experience">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="hero">
+      <img src="https://cdn.phototourl.com/free/2026-04-07-f4b53ad8-6260-402e-a6f9-090959a8dd8c.jpg" alt="Varintorn" class="hero-photo">
+      <div class="hero-text">
+        <h1>Varintorn<br/>Painpaisansakul</h1>
+        <div class="job-title">Student</div>
+        <p>กำลังเรียนรู้ด้าน Web Programming ในโปรแกรม Discovery Piscine 2026 เน้นการพัฒนาทักษะด้วย HTML และ CSS อย่างสร้างสรรค์</p>
+      </div>
+    </section>
+    <section id="experience">
+      <h2>Skills & Education</h2>
+      <div class="exp-item">
+        <div style="color: var(--muted); font-size: 0.8rem;">2026</div>
+        <div>
+          <h3>Discovery Piscine</h3>
+          <p style="font-style: italic; color: var(--muted);">Web Programming Essentials</p>
+        </div>
+      </div>
+      <div style="margin-top: 2rem;">
+        <div class="skill-tag">HTML</div>
+        <div class="skill-tag">CSS</div>
+        <div class="skill-tag">Creativity</div>
+        <div class="skill-tag">Time Management</div>
+      </div>
+    </section>
+  </main>
+  <div id="contact">
+    <section>
+      <h2>Contact</h2>
+      <a href="mailto:vxrint@gmail.com" class="contact-link">Email: vxrint@gmail.com</a>
+      <a href="https://github.com/DiscoveryPiscine42Bangkok2025/discovery-piscine-web-programming-essentials-april-2026-vxrintforwork-netizen.git" class="contact-link" target="_blank">GitHub Repository</a>
+    </section>
+  </div>
+  <footer>© 2026 Varintorn Painpaisansakul</footer>
+</body>
+</html>
