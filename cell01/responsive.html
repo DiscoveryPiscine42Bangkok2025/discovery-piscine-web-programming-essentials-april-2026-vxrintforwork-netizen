@@ -5,27 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Table</title>
     <style>
-    
-    html, body {
+        html, body {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
         }
+
         .wrapper {
             width: 100%;
-            height: 100vh; /* ความสูงเต็มหน้าจอ */
-            overflow: auto; /* เผื่อกรณีเนื้อหาเยอะจนล้นให้เกิด Scrollbar */
-        }table {
-            /* ทำให้ตารางกว้างและสูงเต็มพื้นที่หน้าเว็บ */
+            height: 100vh;
+            overflow: auto;
+        }
+
+        table {
             width: 100%;
             height: 100%;
-            
-            /* รวมเส้นขอบเข้าด้วยกัน */
             border-collapse: collapse;
-            
-            /* จุดสำคัญ: table-layout: fixed ช่วยให้ตารางยอมหดตัว (shrink) 
-               โดยบังคับให้คอลัมน์เฉลี่ยพื้นที่กัน ไม่ขยายตามเนื้อหาข้างใน */
             table-layout: fixed;
         }
 
@@ -33,11 +29,9 @@
             border: 2px solid #333;
             text-align: center;
             padding: 8px;
-            /* ป้องกันคำยาวๆ ดันตารางจนเบี้ยว */
             word-wrap: break-word;
         }
 
-        /* ตกแต่งสีสันเพิ่มเติมตามใจชอบ */
         thead {
             background-color: #f0f0f0;
         }
